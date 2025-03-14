@@ -18,3 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: ls -la  
+    - run: spark-submit --version
+    - run: spark-submit --master local hello.py
+    - run: ls -la  
+
